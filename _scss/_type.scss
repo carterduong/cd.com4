@@ -1,0 +1,43 @@
+$viewport-4: 600px;
+$viewport-7: 800px;
+$viewport-9: 992px;
+$viewport-12: 1200px;
+
+html, h1, p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.8em;
+  line-height: 1.2rem;
+
+  @media screen and (min-width: $viewport-4) {
+
+  }
+  @media screen and (min-width: $viewport-7) {
+    font-size: 0.875em;
+  }
+  @media screen and (min-width: $viewport-9) {
+    
+  }
+  @media screen and (min-width: $viewport-12) {
+    font-size: 1.063em;
+    line-height: 1.5rem;
+  }
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+.title-text {
+  text-align: left;
+
+  @media screen and (min-width: 350px) {
+    text-align: left;
+  }
+  @media screen and (min-width: $break-medium) {
+    text-align: right;
+  }
+}

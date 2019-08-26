@@ -1,0 +1,57 @@
+- Fashion Quarterly: 
+  title: Fashion Quarterly
+  link: <a href="https://drive.google.com/open?id=1fhh3G_KGaam5uttlMRh8_gPBNBtS-TsO" class="underline" target="_blank">PDF↗&#xFE0E;</a>
+  date: 2017–2019
+  role: Co-Editor, Art Direction, Design
+  description: A student-run publication</a> that explores the culture of style, art, and design at UC San Diego. Writing by Leanza Ellacer and Zach Roberts. Photography by Carter Duong, Lily Tang, and Dora Wang.
+  images:
+    - fq1.png
+    - fq2.png
+    - fq3.png
+    - fq4.png
+    - fq5.png
+
+- Bitter Melon:
+  title: Bitter Melon
+  link: <a href="http://bitter-melon.co" class="underline" target="_blank">Site↗&#xFE0E;</a>
+  date: April 2019
+  role: Web Design, Development
+  description: A lightweight photoblog developed using <a href="https://choo.io" target="_blank">choo</a>. Photography by Carter Duong.
+  gifs: 
+    - b-m.mp4
+    - b-m2.mp4
+
+- Heavy Friends: 
+  title: Heavy Friends
+  link: <a href="http://heavyfriends.info" class="underline" target="_blank">Site↗&#xFE0E;</a>
+  date: April 2018
+  role: Web Design, Development
+  description: A microsite for a weekly radio show based out of KSDT at UC San Diego. Developed using three.js.
+  images:
+    - iPhone_1.png
+
+- Résumé: 
+  title: Résumé
+  date: November 2016
+  role: Game Design, Development  
+  description: A short game about computer programming, squiggles, and being true to yourself. Developed using Unity.
+  gifs:
+    - resume-1.mp4
+    - resume-2.mp4
+    - resume-3.mp4
+
+- Posters:
+  title: Posters
+  date: 2018–2019
+  description: Miscellaneous sketches in 3D and 2D.
+  images: 
+    - aiv.png
+    - 160.png
+
+- Extras: 
+  title: 
+  date: 
+  role:
+  description: 
+  images:
+    - rents.png

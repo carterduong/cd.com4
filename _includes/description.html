@@ -1,0 +1,31 @@
+<div>
+{% for project in site.data.projects %}
+  <div class="bottom-text">
+    <div class="text-container">
+      <h1 class="title-text flex-element">
+        {{project.title}}
+      </h1>
+      <p class="description-text flex-element">
+        {{project.description}}
+      </p>
+      <p class="meta-text flex-element">
+        {%if project.role %}
+          {{project.role}}
+          <br>
+        {%endif%}
+        {%if project.date %}
+          {{project.date}}
+          <br>
+        {%endif%}
+        {%if project.link %}
+          {%for link in project.link %}
+            {{link}}
+            <br>
+          {%endfor%}
+        {%endif%}
+        {{project.collaborators}}
+      </p>
+    </div>
+  </div>
+{% endfor %}
+</div>

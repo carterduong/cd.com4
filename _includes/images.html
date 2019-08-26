@@ -1,0 +1,23 @@
+{% assign imgix-url = "https://carterduong.imgix.net/" %}
+{% assign local-url = "assets/img/" %}  
+
+<div id="canvas-container"></div>
+
+<!-- Projects -->
+{% for project in site.data.projects %}
+<div class="project {{project.title}}" id="{{forloop.index}}">
+  <div class="image-container">
+      {% for image-url in project.images %}
+
+        <img src="{{imgix-url}}{{image-url}}"
+        srcset="{{imgix-url}}{{image-url}}?w=500 500w, {{imgix-url}}{{image-url}}?w=1000 1000w"
+        sizes="(min-width: 800px) 60vw, 70vw"
+        />
+
+      {% endfor %}
+      {% for gif in project.gifs %}
+        <video muted autoplay playsinline loop src="{{local-url}}{{gif}}" type="video/mp4"></video>
+      {% endfor %}
+  </div>
+</div>
+{% endfor %}

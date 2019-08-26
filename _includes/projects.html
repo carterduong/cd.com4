@@ -1,0 +1,55 @@
+{% assign imgix-url = "https://carterduong.imgix.net/" %}
+  
+<div id="canvas-container"></div>
+
+<div class="projects-container">
+  <!-- Landing -->
+  <div class="project">
+      <div class="image-container" id="mobile-landing"></div> 
+      <div class="text-container">
+        <h1 class="title">INFO</h1>
+        <p class="description-container">
+          Carter Duong is a designer and developer from 
+            the Bay Area<sup><a href="https://goo.gl/maps/cKExn6muhyq" target="_blank">1</a>+<a href="https://goo.gl/maps/VHi9HtWjcHs" target="_blank">2</a></sup> 
+            and based near Los Angeles<sup><a href="https://goo.gl/maps/NrSy197bgj22" target="_blank">3</a></sup>. He recently graduated from UC San Diego<sup><a href="https://goo.gl/maps/c4LcBHj2JUu" target="_blank">4</a></sup>
+            with a B.A. in Interdisciplinary Computing and the Arts.
+        </p>
+      </div>
+      <div class="vertical-line"></div>
+    </div>
+
+  <!-- Projects -->
+  {% for project in site.data.projects %}
+  <div class="project {{project.title}}" id="{{forloop.index}}">
+    <div class="image-container">
+        {% for image-url in project.images %}
+          <img src="{{image-url}}">
+        {% endfor %}
+        {% for gif in project.gifs %}
+          <video muted autoplay playsinline loop src="{{gif}}" type="video/mp4"></video>
+        {% endfor %}
+    </div>
+    <div class="text-container">
+      <h1 class="title-text">{{project.title}}</h1>
+      <p class="meta-text">
+        {%if project.role %}
+          {{project.role}}
+          <br>
+        {%endif%}
+        {%if project.date %}
+          {{project.date}}
+          <br>
+        {%endif%}
+        {{project.collaborators}}
+      </p>
+      <p class="description-text">
+        {{project.description}}
+      </p>
+    </div>
+    {% if forloop.last == false %}
+      <div class="vertical-line"></div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</div>
