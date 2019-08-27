@@ -1,0 +1,34 @@
+<div id="container">
+  <a>✦</a>
+  Carter Duong is a designer and developer from the Bay Area
+  <sup>
+    <a href="https://goo.gl/maps/cKExn6muhyq" target="_blank">1</a>
+    <span>+</span>
+    <a href="https://goo.gl/maps/VHi9HtWjcHs" target="_blank">2</a>
+  </sup> 
+  and based near Los Angeles.
+  <sup>
+    <a href="https://goo.gl/maps/NrSy197bgj22" target="_blank">3</a>
+  </sup>
+  He graduated from UC San Diego
+  <sup>
+    <a href="https://goo.gl/maps/c4LcBHj2JUu" target="_blank">4</a>
+  </sup>
+  with a B.A. in Interdisciplinary Computing and the Arts, and is open to full-time or freelance collaborations.
+</div>
+
+<div id="container">
+  <a href="http://are.na./carter-duong" target="_blank" id="arena">Are.na</a>
+  <br>
+  <a href="http://instagram.com/carterduong" target="_blank" id="instagram">Instagram</a>
+  <br>
+  <a href="mailto:info@carterduong.com" target="_blank" id="email">Email</a>
+</div>
+
+<div id="container">
+  {% for project in site.data.projects %}
+  <div>
+    ① {{project.title}}
+  </div>
+  {% endfor %}
+</div>
