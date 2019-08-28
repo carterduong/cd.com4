@@ -31,7 +31,7 @@
   {% assign unicode = 2460 %}
   {% assign projects_list = site.projects | sort: 'order' %}
   {% for project in site.projects %}
-    <a href="{{project.permalink}}">
+    <a href="{{site.baseurl}}{{project.permalink}}">
       <div class="project-container">
         <div class="title">&#x{{unicode}}; {{project.title}}</div>
         <img src="{{local-url}}{{project.thumbnail}}"/>
