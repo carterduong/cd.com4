@@ -1,5 +1,5 @@
 title: Carter Duong
-email: c@carterduong.com
+email: info@carterduong.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -20,3 +20,17 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - .jekyll-metadata
+
+collections:
+  projects:
+    output: true
+    sort_by: order
+    order:
+      - bitter-melon.md
+      - sunset-spot.md
+      - fashion-quarterly.md
+      - heavyfriends.info
+      - resume.md
+      - posters.md
+      - extras.md

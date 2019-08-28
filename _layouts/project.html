@@ -1,0 +1,37 @@
+{% assign local-url = "assets/img/" %}
+
+{% include head.html %}
+<body>
+  <a class="back-btn" href="{{site.url}}">✕</a>
+  <div class="container">
+    {{page.title}}
+    <br>
+    {{page.year}} <a href="{{page.link.url}}" class="project-link" target="_blank">{{page.link.type}}↗&#xFE0E;</a>
+  </div>
+  <div class="container">
+      {{page.description}}
+  </div>
+  <div class="container">
+    {{page.credits}}
+  </div>
+  <div class="container">
+    {% for image-url in page.images %}
+      <img src={{local-url}}{{image-url}}/>
+    {% endfor %}
+  </div>
+  <div class="container">
+    –
+    <div class="footer-nav">
+    {% assign unicode = 2460 %}
+    {% assign projects_list = site.projects | sort: 'order' %}
+    {% for project in site.projects %}
+      <a href="{{project.permalink}}">
+        &#x{{unicode}};
+      </a>
+      {% assign unicode = unicode | plus: 1 %}
+    {% endfor %}
+    </div>
+  </div>
+
+</body>
+{% include footer.html %}

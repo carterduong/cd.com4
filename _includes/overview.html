@@ -1,10 +1,12 @@
-<div id="container">
-  <a>✦</a>
+{% assign local-url = "assets/img/" %}  
+
+<div class="container">
+  <a href="https://whoarei.bandcamp.com/track/love-will-shine" target="_blank">✦</a>
   Carter Duong is a designer and developer from the Bay Area
   <sup>
     <a href="https://goo.gl/maps/cKExn6muhyq" target="_blank">1</a>
     <span>+</span>
-    <a href="https://goo.gl/maps/VHi9HtWjcHs" target="_blank">2</a>
+    <a href="https://goo.gl/maps/5SW5ohjML3i9iRJ16" target="_blank">2</a>
   </sup> 
   and based near Los Angeles.
   <sup>
@@ -12,12 +14,12 @@
   </sup>
   He graduated from UC San Diego
   <sup>
-    <a href="https://goo.gl/maps/c4LcBHj2JUu" target="_blank">4</a>
+    <a href="https://goo.gl/maps/QGY7VzuvQuCxKoxo8" target="_blank">4</a>
   </sup>
   with a B.A. in Interdisciplinary Computing and the Arts, and is open to full-time or freelance collaborations.
 </div>
 
-<div id="container">
+<div class="container">
   <a href="http://are.na./carter-duong" target="_blank" id="arena">Are.na</a>
   <br>
   <a href="http://instagram.com/carterduong" target="_blank" id="instagram">Instagram</a>
@@ -25,10 +27,16 @@
   <a href="mailto:info@carterduong.com" target="_blank" id="email">Email</a>
 </div>
 
-<div id="container">
-  {% for project in site.data.projects %}
-  <div>
-    ① {{project.title}}
-  </div>
+<div class="container" id="project-thumbnails">
+  {% assign unicode = 2460 %}
+  {% assign projects_list = site.projects | sort: 'order' %}
+  {% for project in site.projects %}
+    <a href="{{project.permalink}}">
+      <div class="project-container">
+        <div class="title">&#x{{unicode}}; {{project.title}}</div>
+        <img src="{{local-url}}{{project.thumbnail}}"/>
+      </div>
+    </a>
+    {% assign unicode = unicode | plus: 1 %}
   {% endfor %}
 </div>

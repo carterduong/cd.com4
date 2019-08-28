@@ -38,6 +38,8 @@
   date: April 2018
   role: Web Design, Development
   description: A microsite for a weekly radio show based out of KSDT at UC San Diego. Developed using three.js.
+  thumbnail:
+    - iPhone_1.png
   images:
     - iPhone_1.png
 
