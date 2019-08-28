@@ -28,7 +28,7 @@
       {% if project.title == page.title %}
         <a href="{{project.permalink}}" id="{{project.link.id}}" class="pulse" >&#x{{unicode}};</a>
       {% else %}
-        <a href="{project.permalink}}" id="{{project.link.id}}">&#x{{unicode}};</a>
+        <a href="{{project.permalink}}" id="{{project.link.id}}">&#x{{unicode}};</a>
       {% endif %}
       {% assign unicode = unicode | plus: 1 %}
     {% endfor %}
