@@ -20,18 +20,19 @@
     {% endfor %}
   </div>
   <div class="container">
-    –
+    <span id="bottom-text">–</span>
     <div class="footer-nav">
     {% assign unicode = 2460 %}
     {% assign projects_list = site.projects | sort: 'order' %}
     {% for project in site.projects %}
-      <a href="{{project.permalink}}">
-        &#x{{unicode}};
-      </a>
+      {% if project.title == page.title %}
+        <a href="{{project.permalink}}" id="{{project.link.id}}" class="pulse" >&#x{{unicode}};</a>
+      {% else %}
+        <a href="{{project.permalink}}" id="{{project.link.id}}">&#x{{unicode}};</a>
+      {% endif %}
       {% assign unicode = unicode | plus: 1 %}
     {% endfor %}
     </div>
   </div>
-
 </body>
 {% include footer.html %}

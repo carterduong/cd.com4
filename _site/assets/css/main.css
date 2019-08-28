@@ -78,8 +78,17 @@ html { background-color: black; color: white; font-family: neue-haas-unica, sans
 a { text-decoration: none; color: white; white-space: nowrap; }
 a:hover { background-color: white; color: black; }
 sup { position: relative; left: -6px; white-space: nowrap; }
+@keyframes pulse { 0% { opacity: .3;
+text-shadow: 0px 0px 5px white; }
+50% { opacity: 1;
+text-shadow: 0x 0px 5px white; }
+100% { opacity: .3;
+text-shadow: 0px 0px 5px white; } }
 .back-btn { position: absolute; top: 1rem; right: 2rem; font-size: 3rem; }
 .container { max-width: 1200px; font-size: 2rem; line-height: 1.4; padding: 1rem 10rem 1rem 1rem; }
+.container img { max-width: 1200px; }
+.footer-nav { white-space: nowrap; }
+.pulse { animation: pulse 3s infinite; }
 .year-text { font-size: 1.4rem; }
 .project-container { padding: 0 1rem 1rem 0; }
 .project-link { text-decoration: underline; }

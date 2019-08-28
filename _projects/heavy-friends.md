@@ -3,6 +3,10 @@ layout: project
 title: heavyfriends.info
 permalink: /heavy-friends
 year: 2018
+link:
+  url: heavyfriends.info
+  type: URL
+  id: hf-fm
 thumbnail:
   - iPhone_1.png
 images:
