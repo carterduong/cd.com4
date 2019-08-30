@@ -11,6 +11,7 @@
   <div class="container">
       {{page.description}}
   </div>
+
   <div class="container">
     {{page.credits}}
   </div>
@@ -18,7 +19,16 @@
     {% for image-url in page.images %}
       <img src={{local-url}}{{image-url}}/>
     {% endfor %}
+
+    {% for gif-url in page.gifs %}
+      <video muted autoplay playsinline loop src="{{local-url}}{{gif-url}}" type="video/mp4"></video>
+    {% endfor %}
+
+    {% if page.embed %}
+    {{page.embed }}
+    {% endif %}
   </div>
+
   <div class="container">
     <span id="bottom-text">–</span>
     <div class="footer-nav">

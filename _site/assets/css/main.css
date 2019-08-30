@@ -86,11 +86,11 @@ text-shadow: 0x 0px 5px white; }
 text-shadow: 0px 0px 5px white; } }
 .back-btn { position: absolute; top: 1rem; right: 2rem; font-size: 3rem; }
 .container { max-width: 1200px; font-size: 2rem; line-height: 1.4; padding: 1rem 10rem 1rem 1rem; }
-.container img { max-width: 1200px; }
+.container img, .container video { max-width: 1200px; padding-bottom: 1rem; }
 .footer-nav { white-space: nowrap; }
 .pulse { animation: pulse 3s infinite; }
 .year-text { font-size: 1.4rem; }
-.project-container { padding: 0 1rem 1rem 0; }
+.project-container { padding: 0 2.5rem 2.5rem 0; }
 .project-link { text-decoration: underline; }
 #arena:hover:after { content: ' – /carter-duong'; }
 #instagram:hover:after { content: ' – @carterduong'; }
@@ -100,5 +100,5 @@ text-shadow: 0px 0px 5px white; } }
 #project-thumbnails img { display: block; max-width: 300px; }
 #project-thumbnails .project-container:hover { cursor: pointer; }
 #project-thumbnails .project-container:hover .title { background-color: white; color: black; }
-#project-thumbnails .title { margin-bottom: 1rem; }
+#project-thumbnails .title { display: inline-block; margin-bottom: 1rem; }
 /*# sourceMappingURL=main.css.map */

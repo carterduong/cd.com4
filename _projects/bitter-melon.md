@@ -9,9 +9,10 @@ link:
   id: b-m.co
 role: Web Design, Development
 credits: Photography by Carter Duong.
-gifs: 
-  - b-m.mp4
-  - b-m2.mp4
+thumbnail: b-m-1.jpeg
+images: 
+  - b-m-1.jpeg
+  - b-m-2.jpeg
 description:
-  - The homiest site on the net. Developed using Kirby.
+  - The coziest photoblog on the net. Developed using Kirby.
 ---

@@ -7,7 +7,10 @@ link:
   url: 
   type: 
   id: posters
-images:
-  -
+thumbnail:
+  - aiv.jpeg
+images: 
+  - aiv.jpeg
+  - 160.jpeg
 description:
 ---

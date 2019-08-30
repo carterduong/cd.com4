@@ -23,12 +23,11 @@ exclude:
 collections:
   projects:
     output: true
-    sort_by: order
     order:
       - bitter-melon.md
       - sunset-spot.md
       - fashion-quarterly.md
-      - heavyfriends.info
+      - heavy-friends.md
       - resume.md
       - posters.md
       - extras.md

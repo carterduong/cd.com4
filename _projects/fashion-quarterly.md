@@ -7,6 +7,8 @@ link:
   url: https://drive.google.com/open?id=1fhh3G_KGaam5uttlMRh8_gPBNBtS-TsO
   type: PDF
 credits: Writing by Leanza Ellacer and Zach Roberts. Photography by Carter Duong, Lily Tang, and Dora Wang.
+thumbnail:
+  - fq4.jpeg
 images:
   - fq1.jpeg
   - fq2.jpeg
