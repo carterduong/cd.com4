@@ -49,12 +49,54 @@ sup {
   max-width: 1200px;
   font-size: 2rem;
   line-height: 1.4;
-  padding: 1rem 10rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 
   img, video {
-    max-width: 1200px;
-    padding-bottom: 1rem;
+    max-width: 250px;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
   }
+}
+
+.img-container {
+  max-width: 1500px;
+  padding: 1rem 1rem 0rem 1rem;
+
+  video {
+    width: 40vw;
+    height: auto;
+    padding: 0 0 1rem 0;
+  }
+
+  .fq-500h {
+    height: 430px;
+    width: auto;
+  }
+
+  .fq-500w{
+    height: auto;
+    width: 430px;
+  }
+
+  .img-half {
+    width: 48%;
+    height: auto;
+    padding: 0 1rem 1rem 0;
+  }
+
+  .img-center {
+    width: 100%;
+    height: auto;
+  }
+
+  #hf-fm {
+    width: auto;
+    height: 60vh;
+  }
+}
+
+.top {
+  vertical-align: top;
 }
 
 .footer-nav {
@@ -90,6 +132,7 @@ sup {
 }
 
 #project-thumbnails {
+  max-width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

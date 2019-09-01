@@ -6,28 +6,22 @@
   <div class="container">
     {{page.title}}
     <br>
-    {{page.year}} <a href="{{page.link.url}}" class="project-link" target="_blank">{{page.link.type}}↗&#xFE0E;</a>
+    {{page.year}}
+    {% if page.link %}
+      <a href="{{page.link.url}}" class="project-link" target="_blank">{{page.link.type}}↗&#xFE0E;</a>
+    {% endif %}
   </div>
   <div class="container">
       {{page.description}}
   </div>
 
-  <div class="container">
-    {{page.credits}}
-  </div>
-  <div class="container">
-    {% for image-url in page.images %}
-      <img src={{local-url}}{{image-url}}/>
-    {% endfor %}
+  {% if page.credits %}
+    <div class="container">
+      {{page.credits}}
+    </div>
+  {% endif %}
 
-    {% for gif-url in page.gifs %}
-      <video muted autoplay playsinline loop src="{{local-url}}{{gif-url}}" type="video/mp4"></video>
-    {% endfor %}
-
-    {% if page.embed %}
-    {{page.embed }}
-    {% endif %}
-  </div>
+  {{page.content}}
 
   <div class="container">
     <span id="bottom-text">–</span>

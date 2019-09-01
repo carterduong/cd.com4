@@ -16,3 +16,7 @@ images:
 description:
   - The coziest photoblog on the net. Developed using Kirby.
 ---
+<div class="img-container">
+  {% include image.html src="b-m-1.jpeg" class="img-half" %}
+  {% include image.html src="b-m-2.jpeg" class="img-half" %}
+</div>
