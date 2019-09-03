@@ -10,7 +10,7 @@ credits: Writing by Leanza Ellacer and Zach Roberts. Photography by Carter Duong
 thumbnail:
   - fq-8.jpg
 description: 
-  - Art direction and design for a student-run publication that explores the culture of style, art, and design at UC San Diego.
+  - Art direction and design for a student-run publication exploring the culture of style, art, and design at UC San Diego.
 ---
 <div class="img-container">
   {% include image.html src="fq-1.jpg" class="fq-500h" %}

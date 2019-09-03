@@ -1,3 +1,8 @@
+$mobile-landscape: 480px;
+$tablet-portrait: 768px;
+$tablet-landscape: 992px;
+$laptop: 1200px;
+
 html {
   background-color: black;
   color: white;
@@ -19,48 +24,55 @@ a {
 
 sup {
   position: relative;
-  left: -6px;
   white-space: nowrap;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: .3;
-    text-shadow: 0px 0px 5px white;
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0x 0px 5px white;
-  }
-  100% {
-    opacity: .3;
-    text-shadow: 0px 0px 5px white;
+  
+  @media screen and (min-width: $laptop) {
+    left: -6px;    
   }
 }
 
 .back-btn {
   position: absolute;
   top: 1rem;
-  right: 2rem;
-  font-size: 3rem;
+  right: 1rem;
+  font-size: 1.5rem;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 3rem;
+  }
 }
 
 .container {
-  max-width: 1200px;
-  font-size: 2rem;
+  max-width: 100vw;
+  font-size: 1rem;
   line-height: 1.4;
   padding: 1rem 1rem 1rem 1rem;
+
+  @media screen and (min-width: $tablet-portrait) {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $laptop) {
+    max-width: 1200px;
+    font-size: 2rem;
+    line-height: 1.4;
+    padding: 1rem 1rem 1rem 1rem;
+  }
 
   img, video {
     max-width: 250px;
     padding-bottom: .5rem;
-    padding-right: .5rem;
+
+    @media screen and (min-width: $laptop) {
+      padding-right: .5rem;
+    }
   }
 }
 
 .img-container {
   max-width: 1500px;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 
   video {
     width: 40vw;
@@ -69,19 +81,26 @@ sup {
   }
 
   .fq-500h {
+    padding: 0 1rem 1rem 0;
     height: 430px;
     width: auto;
   }
 
   .fq-500w{
+    padding: 0 1rem 1rem 0;
     height: auto;
     width: 430px;
   }
 
   .img-half {
-    width: 48%;
-    height: auto;
-    padding: 0 1rem 1rem 0;
+    width: calc(100vw - 2rem);
+    padding: 0 0 1rem 0;
+
+    @media screen and (min-width: $laptop) {
+      width: 48%;
+      height: auto;
+      padding: 0 1rem 1rem 0;
+    }
   }
 
   .img-center {
@@ -100,7 +119,12 @@ sup {
 }
 
 .footer-nav {
+  font-size: 1.5rem;
   white-space: nowrap;
+
+  @media screen and (min-width: $laptop) {
+    font-size: 1rem;
+  }
 }
 
 .pulse {
@@ -112,7 +136,16 @@ sup {
 }
 
 .project-container {
-  padding: 0 2.5rem 2.5rem 0;
+  padding-bottom: 1rem;
+
+  @media screen and (min-width: $tablet-portrait) {
+    padding-left: 1rem;
+    max-width: calc(50vw - 3rem);
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 0 2.5rem 2.5rem 0;
+  }
 }
 
 .project-link {
@@ -131,11 +164,15 @@ sup {
   content: ' – info@carterduong.com';
 }
 
-#project-thumbnails {
-  max-width: 100vw;
+#thumbnails-container {
+  max-width: calc(100vw - 2rem);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+    
+  
+  @media screen and (min-width: $laptop) {
+  }
 
   a {
     all: unset;
@@ -143,7 +180,11 @@ sup {
 
   img {
     display: block;
-    max-width: 300px;
+    max-width: calc(100vw - 2rem);
+
+    @media screen and (min-width: $tablet-portrait) {
+      max-width: 300px;
+    }
   }
 
   .project-container:hover {
@@ -158,5 +199,20 @@ sup {
   .title {
     display: inline-block;
     margin-bottom: 1rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: .3;
+    text-shadow: 0px 0px 5px white;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0x 0px 5px white;
+  }
+  100% {
+    opacity: .3;
+    text-shadow: 0px 0px 5px white;
   }
 }

@@ -77,36 +77,46 @@ template { display: none; }
 html { background-color: black; color: white; font-family: neue-haas-unica, helvetica, arial, sans-serif; font-weight: 400; font-style: normal; }
 a { text-decoration: none; color: white; white-space: nowrap; }
 a:hover { background-color: white; color: black; }
-sup { position: relative; left: -6px; white-space: nowrap; }
+sup { position: relative; white-space: nowrap; }
+@media screen and (min-width: 1200px) { sup { left: -6px; } }
+.back-btn { position: absolute; top: 1rem; right: 1rem; font-size: 1.5rem; }
+@media screen and (min-width: 1200px) { .back-btn { font-size: 3rem; } }
+.container { max-width: 100vw; font-size: 1rem; line-height: 1.4; padding: 1rem 1rem 1rem 1rem; }
+@media screen and (min-width: 768px) { .container { font-size: 1.5rem; line-height: 1.4; } }
+@media screen and (min-width: 1200px) { .container { max-width: 1200px; font-size: 2rem; line-height: 1.4; padding: 1rem 1rem 1rem 1rem; } }
+.container img, .container video { max-width: 250px; padding-bottom: .5rem; }
+@media screen and (min-width: 1200px) { .container img, .container video { padding-right: .5rem; } }
+.img-container { max-width: 1500px; padding: 0rem 1rem 0rem 1rem; }
+.img-container video { width: 40vw; height: auto; padding: 0 0 1rem 0; }
+.img-container .fq-500h { padding: 0 1rem 1rem 0; height: 430px; width: auto; }
+.img-container .fq-500w { padding: 0 1rem 1rem 0; height: auto; width: 430px; }
+.img-container .img-half { width: calc(100vw - 2rem); padding: 0 0 1rem 0; }
+@media screen and (min-width: 1200px) { .img-container .img-half { width: 48%; height: auto; padding: 0 1rem 1rem 0; } }
+.img-container .img-center { width: 100%; height: auto; }
+.img-container #hf-fm { width: auto; height: 60vh; }
+.top { vertical-align: top; }
+.footer-nav { font-size: 1.5rem; white-space: nowrap; }
+@media screen and (min-width: 1200px) { .footer-nav { font-size: 1rem; } }
+.pulse { animation: pulse 3s infinite; }
+.year-text { font-size: 1.4rem; }
+.project-container { padding-bottom: 1rem; }
+@media screen and (min-width: 768px) { .project-container { padding-left: 1rem; max-width: calc(50vw - 3rem); } }
+@media screen and (min-width: 1200px) { .project-container { padding: 0 2.5rem 2.5rem 0; } }
+.project-link { text-decoration: underline; }
+#arena:hover:after { content: ' – /carter-duong'; }
+#instagram:hover:after { content: ' – @carterduong'; }
+#email:hover:after { content: ' – info@carterduong.com'; }
+#thumbnails-container { max-width: calc(100vw - 2rem); display: flex; flex-direction: row; flex-wrap: wrap; }
+#thumbnails-container a { all: unset; }
+#thumbnails-container img { display: block; max-width: calc(100vw - 2rem); }
+@media screen and (min-width: 768px) { #thumbnails-container img { max-width: 300px; } }
+#thumbnails-container .project-container:hover { cursor: pointer; }
+#thumbnails-container .project-container:hover .title { background-color: white; color: black; }
+#thumbnails-container .title { display: inline-block; margin-bottom: 1rem; }
 @keyframes pulse { 0% { opacity: .3;
 text-shadow: 0px 0px 5px white; }
 50% { opacity: 1;
 text-shadow: 0x 0px 5px white; }
 100% { opacity: .3;
 text-shadow: 0px 0px 5px white; } }
-.back-btn { position: absolute; top: 1rem; right: 2rem; font-size: 3rem; }
-.container { max-width: 1200px; font-size: 2rem; line-height: 1.4; padding: 1rem 1rem 1rem 1rem; }
-.container img, .container video { max-width: 250px; padding-bottom: .5rem; padding-right: .5rem; }
-.img-container { max-width: 1500px; padding: 1rem 1rem 0rem 1rem; }
-.img-container video { width: 40vw; height: auto; padding: 0 0 1rem 0; }
-.img-container .fq-500h { height: 430px; width: auto; }
-.img-container .fq-500w { height: auto; width: 430px; }
-.img-container .img-half { width: 48%; height: auto; padding: 0 1rem 1rem 0; }
-.img-container .img-center { width: 100%; height: auto; }
-.img-container #hf-fm { width: auto; height: 60vh; }
-.top { vertical-align: top; }
-.footer-nav { white-space: nowrap; }
-.pulse { animation: pulse 3s infinite; }
-.year-text { font-size: 1.4rem; }
-.project-container { padding: 0 2.5rem 2.5rem 0; }
-.project-link { text-decoration: underline; }
-#arena:hover:after { content: ' – /carter-duong'; }
-#instagram:hover:after { content: ' – @carterduong'; }
-#email:hover:after { content: ' – info@carterduong.com'; }
-#project-thumbnails { max-width: 100vw; display: flex; flex-direction: row; flex-wrap: wrap; }
-#project-thumbnails a { all: unset; }
-#project-thumbnails img { display: block; max-width: 300px; }
-#project-thumbnails .project-container:hover { cursor: pointer; }
-#project-thumbnails .project-container:hover .title { background-color: white; color: black; }
-#project-thumbnails .title { display: inline-block; margin-bottom: 1rem; }
 /*# sourceMappingURL=main.css.map */
