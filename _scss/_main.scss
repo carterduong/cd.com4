@@ -59,44 +59,51 @@ sup {
     line-height: 1.4;
     padding: 1rem 1rem 1rem 1rem;
   }
-
-  img, video {
-    max-width: 250px;
-    padding-bottom: .5rem;
-
-    @media screen and (min-width: $laptop) {
-      padding-right: .5rem;
-    }
-  }
 }
 
 .img-container {
   max-width: 1500px;
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 
   video {
-    width: 40vw;
+    width: calc(100vw - 2rem);
     height: auto;
-    padding: 0 0 1rem 0;
+    padding-bottom: 1rem;
+
+    @media screen and (min-width: $tablet-portrait) {
+      width: 40vw;
+      height: auto;
+      padding: 0 0.5rem 0.5rem 0;
+    }
   }
 
   .fq-500h {
     padding: 0 1rem 1rem 0;
-    height: 430px;
-    width: auto;
+    width: calc(100vw - 2rem);
+    height: auto;
+
+    @media screen and (min-width: $tablet-portrait) {
+      height: 430px;
+      width: auto;
+    }
   }
 
   .fq-500w{
     padding: 0 1rem 1rem 0;
-    height: auto;
-    width: 430px;
+    width: auto;
+    height: calc(100vw - 2rem);
+
+    @media screen and (min-width: $tablet-portrait) {
+      height: auto;
+      width: 430px;
+    }
   }
 
   .img-half {
     width: calc(100vw - 2rem);
     padding: 0 0 1rem 0;
 
-    @media screen and (min-width: $laptop) {
+    @media screen and (min-width: $tablet-portrait) {
       width: 48%;
       height: auto;
       padding: 0 1rem 1rem 0;
@@ -104,13 +111,23 @@ sup {
   }
 
   .img-center {
-    width: 100%;
+    width: calc(100vw - 2rem);
     height: auto;
+
+    @media screen and (min-width: $tablet-portrait) {
+      width: 50vw;
+      height: auto;
+    }
   }
 
   #hf-fm {
-    width: auto;
-    height: 60vh;
+    width: calc(100vw - 2rem);
+    height: auto;
+    
+    @media screen and (min-width: $tablet-portrait) {
+      width: auto;
+      height: 60vh;
+    }
   }
 }
 
@@ -123,7 +140,7 @@ sup {
   white-space: nowrap;
 
   @media screen and (min-width: $laptop) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -139,7 +156,7 @@ sup {
   padding-bottom: 1rem;
 
   @media screen and (min-width: $tablet-portrait) {
-    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: calc(50vw - 3rem);
   }
 
@@ -190,6 +207,10 @@ sup {
   .project-container:hover {
     cursor: pointer;
 
+    img {
+      filter: drop-shadow(0px 0px 10px white)
+    }
+    
     .title {
       background-color: white;
       color: black;

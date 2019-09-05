@@ -16,20 +16,16 @@ description:
   {% include image.html src="fq-1.jpg" class="fq-500h" %}
   {% include image.html src="fq-3.jpg" class="fq-500h" %}
   {% include image.html src="fq-5.jpg" class="fq-500h" %}
-</div>
-<div class="img-container">
+  <br>
   {% include image.html src="fq-7.jpg" class="fq-500h" %}
   {% include image.html src="fq-6.jpg" class="fq-500h" %}
-</div>
-<div class="img-container">
+  <br>
   {% include image.html src="fq-6.5.jpg" class="fq-500h" %}
   {% include image.html src="fq-7.5.jpg" class="fq-500h" %}
-</div>
-<div class="img-container">
+  <br>
   {% include image.html src="fq-8.jpg" class="fq-500w" %}
   {% include image.html src="fq-9.jpg" class="fq-500w" %}
-</div>
-<div class="img-container">
+  <br>
   {% include image.html src="fq-11.jpg" class="fq-500w" %}
   {% include image.html src="fq-12.jpg" class="fq-500w" %}
 </div>

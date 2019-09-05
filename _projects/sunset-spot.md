@@ -17,7 +17,6 @@ description:
   {% include image.html src="edz-2.jpeg" class="img-half" %}
   {% include image.html src="edz-4.jpeg" class="img-half" %}
   {% include image.html src="edz-3.jpeg" class="img-half" %}
-</div>
-<div class="img-container">
+  <br>
   {% include image.html src="edz-logo.png" class="img-center" %}
 </div>

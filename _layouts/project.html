@@ -11,9 +11,12 @@
       <a href="{{page.link.url}}" class="project-link" target="_blank">{{page.link.type}}↗&#xFE0E;</a>
     {% endif %}
   </div>
+
+  {% if page.description %}
   <div class="container">
       {{page.description}}
   </div>
+  {% endif %}
 
   {% if page.credits %}
     <div class="container">
