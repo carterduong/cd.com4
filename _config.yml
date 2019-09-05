@@ -19,6 +19,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .jekyll-metadata
+  - img-full-res
 
 collections:
   projects:
