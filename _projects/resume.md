@@ -9,7 +9,7 @@ gifs:
   - resume-2.mp4
   - resume-3.mp4
 thumbnail:
-  - resume-4.jpg
+  - thumbs/resume-4-thumb.jpg
 ---
 <div class="img-container">
   <video muted autoplay playsinline loop src="{{ site.baseurl }}/assets/img/resume-1.mp4" type="video/mp4"></video>

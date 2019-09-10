@@ -4,7 +4,7 @@ title: Posters
 permalink: /posters
 year: 2018–2019
 thumbnail:
-  - forgetmenots.jpg
+  - thumbs/forgetmenots-thumb.jpg
 description:
 ---
 <div class="img-container">

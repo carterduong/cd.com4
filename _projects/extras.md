@@ -3,7 +3,7 @@ layout: project
 title: Extras
 permalink: /extras
 thumbnail:
-  - rents.jpeg
+  - /thumbs/vis1-thumb.jpeg
 images:
   - vis1.jpeg
   - rents.jpeg

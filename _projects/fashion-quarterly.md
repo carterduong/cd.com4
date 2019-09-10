@@ -8,7 +8,7 @@ link:
   type: PDF
 credits: Writing by Leanza Ellacer and Zach Roberts. Photography by Carter Duong, Lily Tang, and Dora Wang.
 thumbnail:
-  - fq-thumb400.png
+  - thumbs/fq-thumb.png
 description: 
   - Art direction and design for a student-run publication exploring the culture of style, art, and design at UC San Diego.
 ---

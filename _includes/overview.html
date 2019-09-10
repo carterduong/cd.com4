@@ -28,15 +28,18 @@
 </div>
 
 <div class="container" id="thumbnails-container">
-  {% assign unicode = 2460 %}
+  {% assign num = 1 %}
   {% assign projects_list = site.projects | sort: 'order' %}
   {% for project in site.projects %}
     <a href="{{site.baseurl}}{{project.permalink}}">
       <div class="project-container">
-        <div class="title">&#x{{unicode}}; {{project.title}}</div>
+        <div class="title">
+          <span class=''>({{num}})</span>
+          {{project.title}}
+        </div>
         <img src="{{local-url}}{{project.thumbnail}}"/>
       </div>
     </a>
-    {% assign unicode = unicode | plus: 1 %}
+    {% assign num = num | plus: 1 %}
   {% endfor %}
 </div>

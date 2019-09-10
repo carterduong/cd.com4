@@ -8,9 +8,7 @@ link:
   type: URL
   id: hf-fm
 thumbnail:
-  - iPhone_1.png
-images:
-  - iPhone_1.png
+  - thumbs/iPhone_1-thumb.png
 description:
   - A microsite for a weekly radio show based out of KSDT at UC San Diego. Developed using three.js.
 ---
